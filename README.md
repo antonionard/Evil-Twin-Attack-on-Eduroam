@@ -124,15 +124,6 @@ hashcat -m 5500 hostapd-wpe/hashes.txt /usr/share/wordlists/rockyou.txt
 
 ---
 
-## 🔐 Certificate Details
-
-Self-signed certificates mimic `eduroam.poliba.it`:
-
-- `server.pem` signed by fake `GEANT OV RSA CA 4`
-- Certs generated via `scripts/hostapd-wpe_certs_creation.sh`
-
----
-
 ## 🌐 Captive Portal
 
 Flask server in `server/` serves OS-specific HTML pages and offers fake cert installation.
@@ -141,18 +132,6 @@ OS detection is based on user-agent and redirection from DNS/iptables.
 
 ---
 
-## 🔍 MITRE ATT&CK Mapping
-
-| Phase             | Technique ID | Description                          |
-|------------------|--------------|--------------------------------------|
-| Reconnaissance    | T1590.006    | SSID, certs, and config gathering    |
-| Adversary-in-Middle | T1557.004 | Fake AP via hostapd-wpe              |
-| Credential Access | T1110.002    | Offline password cracking            |
-| TLS Interception | T1185        | HTTPS MITM after cert install        |
-| Resource Hijack   | T1583.002    | Fake DNS infrastructure (dnsmasq)   |
-| Client Access     | T1659        | Deauth attack                        |
-
----
 
 ## 🛡️ Recommendations
 
