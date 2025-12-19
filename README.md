@@ -3,7 +3,7 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/status-educational-informational?style=flat-square&logo=readthedocs" />
-  <img src="https://img.shields.io/badge/platform-WPA2--Enterprise-blue?style=flat-square&logo=linux"/>
+  <img src="https://img.shields.io/badge/platform-Kali-Linux-blue?style=flat-square&logo=linux"/>
   <img src="https://img.shields.io/badge/license-MIT-green?style=flat-square&logo=openaccess"/>
 </p>
 
